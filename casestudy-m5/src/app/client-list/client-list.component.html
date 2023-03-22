@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Client Name</th>
+            <th>Date Of Birth</th>
+            <th>IdCard</th>
+            <th>phone Number</th>
+            <th>email</th>
+            <th>address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of clientList">
+            <td>{{client.idClient}}</td>
+            <td>{{client.clientName}}</td>
+            <td>{{client.dateOfBirth|date:"dd/MM/yyyy"}}</td>
+            <td>{{client.idCard}}</td>
+            <td>{{client.phoneNumber}}</td>
+            <td>{{client.email}}</td>
+            <td>{{client.address}}</td>
+        </tr>
+    </tbody>
+</table>

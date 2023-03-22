@@ -10,6 +10,7 @@ import { ServiceListComponent } from './service-list/service-list.component';
 import { EditSeriviceComponent } from './edit-serivice/edit-serivice.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateServiceComponent } from './create-service/create-service.component';
+import { ClientListComponent } from './client-list/client-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CreateServiceComponent } from './create-service/create-service.componen
     FooterComponent,
     ServiceListComponent,
     EditSeriviceComponent,
-    CreateServiceComponent
+    CreateServiceComponent,
+    ClientListComponent
   ],
   imports: [
     BrowserModule,
