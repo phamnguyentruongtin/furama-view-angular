@@ -1,0 +1,15 @@
+<div class="card-group">
+    <div class="card" *ngFor="let service of serviceFuramaList">
+        <img [src]="service.img" class="card-img-top"
+          alt="Hollywood Sign on The Hill" />
+        <div class="card-body">
+          <h5 class="card-title">{{service.purpose}}</h5>
+          <p class="card-text">
+            {{service.content}}
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+</div>

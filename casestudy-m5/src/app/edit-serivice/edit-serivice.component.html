@@ -1,0 +1,20 @@
+<form [formGroup]="editServiceForm" (ngSubmit)="editService()">
+<div class="form-outline">
+    <input type="text" formControlName="idService" id="formControlLg" class="form-control form-control-lg" />
+    <label class="form-label" for="formControlLg">ID Service</label>
+    <p style="color: red;" *ngIf="editServiceForm.controls.idService.hasError('min')&&editServiceForm.controls.idService.dirty"></p>
+  </div>
+  <div class="form-outline">
+    <input type="text" formcontrolname="purpose" id="1" class="form-control" />
+    <label class="form-label" for="1">Purpose</label>
+  </div>
+  <div class="form-outline">
+    <input type="text" id="2"  formcontrolname="img" class="form-control" />
+    <label class="form-label" for="3">image</label>
+  </div>
+  <div class="form-outline">
+    <input type="text" id="3" formcontrolname="content" class="form-control" />
+    <label class="form-label" for="3">Content</label>
+  </div>
+  <button type="submit">Edit !!!</button>
+</form>
