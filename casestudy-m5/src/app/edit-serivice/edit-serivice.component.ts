@@ -1,5 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-edit-serivice',
@@ -8,6 +10,7 @@ import { FormControl, FormGroup,Validators } from '@angular/forms';
 })
 export class EditSeriviceComponent implements OnInit {
   editServiceForm : FormGroup
+  
   constructor() {
     this.editServiceForm = new FormGroup({
       idService : new FormControl('',[Validators.min(1)]),
@@ -18,6 +21,7 @@ export class EditSeriviceComponent implements OnInit {
    }
    editService(){
     console.log(this.editServiceForm)
+    
    }
   ngOnInit(): void {
   }
