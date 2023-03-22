@@ -1,0 +1,32 @@
+<form [formGroup]="creatClientForm" (ngSubmit)="createClient()">
+    <div class="form-outline">
+        <input formControlName="idClient" id="1" class="form-control" />
+        <label class="form-label" for="1">ID Client</label>
+    </div>
+    <div class="form-outline">
+        <input formControlName="clientName"  id="2" class="form-control" />
+        <label class="form-label" for="2">Client Name</label>
+    </div>
+    <div class="form-outline">
+        <input formControlName="dateOfBirth" type="date" id="3" class="form-control" />
+        <label class="form-label" for="3">Date Of Birth</label>
+    </div>
+    <div class="form-outline">
+        <input formControlName="idCard" id="4" class="form-control" />
+        <label class="form-label" for="4">ID Card</label>
+    </div>
+    <div class="form-outline">
+        <input formControlName="phoneNumber" id="5" class="form-control" />
+        <label class="form-label" for="5">Phone Number</label>
+    </div>
+    <div class="form-outline">
+        <input formControlName="email" type="email" id="6" class="form-control" />
+        <label class="form-label" for="6">Email</label>
+    </div>
+    <div class="form-outline">
+        <input formControlName="address" id="7" class="form-control" />
+        <label class="form-label" for="7">Address</label>
+    </div>
+    <button type="submit">Register !!!</button>
+
+</form>

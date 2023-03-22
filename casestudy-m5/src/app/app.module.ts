@@ -11,6 +11,8 @@ import { EditSeriviceComponent } from './edit-serivice/edit-serivice.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateServiceComponent } from './create-service/create-service.component';
 import { ClientListComponent } from './client-list/client-list.component';
+import { EditClientComponent } from './edit-client/edit-client.component';
+import { CreateClientComponent } from './create-client/create-client.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ClientListComponent } from './client-list/client-list.component';
     ServiceListComponent,
     EditSeriviceComponent,
     CreateServiceComponent,
-    ClientListComponent
+    ClientListComponent,
+    EditClientComponent,
+    CreateClientComponent
   ],
   imports: [
     BrowserModule,
