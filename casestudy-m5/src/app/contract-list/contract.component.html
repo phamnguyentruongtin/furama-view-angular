@@ -1,0 +1,22 @@
+<table class="table tbn">
+    <thead>
+        <tr>
+            <th>ID Contract</th>
+            <th>Service Name</th>
+            <th>CLient Name</th>
+            <th>Date Make</th>
+            <th>Contract Name</th>
+
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let con of contracts,index as i">
+            <td>{{i + 1}}</td>
+            <td>{{con.serviceMakeContract.purpose}}</td>
+            <td>{{con.clientMakeContract.clientName}}</td>
+            <td>{{con.dateMakeContract}}</td>
+            <td>{{con.nameContract}}</td>
+        </tr>
+    </tbody>
+</table>

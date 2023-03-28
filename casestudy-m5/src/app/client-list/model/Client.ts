@@ -1,4 +1,4 @@
-export interface client{
+export interface Client{
     idClient : number,
     clientName : String,
     dateOfBirth : String,

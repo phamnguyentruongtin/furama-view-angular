@@ -1,6 +1,6 @@
-export interface service {
+export interface Service {
     purpose : String
-    idService : number
+    id : number
     img  : String
     content : String
 }

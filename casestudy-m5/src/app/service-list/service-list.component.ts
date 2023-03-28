@@ -1,6 +1,6 @@
 import { Content } from '@angular/compiler/src/render3/r3_ast';
 import { Component, OnInit } from '@angular/core';
-import { service } from './model/service';
+import { Service } from './model/Service';
 
 @Component({
   selector: 'app-service-list',
@@ -8,7 +8,7 @@ import { service } from './model/service';
   styleUrls: ['./service-list.component.css']
 })
 export class ServiceListComponent implements OnInit {
-  serviceFuramaList : service[]
+  serviceFuramaList : Service[]
  
  
   
@@ -17,18 +17,18 @@ export class ServiceListComponent implements OnInit {
   constructor() { 
     this.serviceFuramaList = [
       {
-        idService : 1,
+        id : 1,
         content : "hay den voi chung toi ban se co nhung trai nghiem tuyet voi",
         purpose : "vui choi ngay he",
         img : "https://furamavietnam.com/wp-content/uploads/2018/07/Vietnam_Danang_Furama_Resort_Exterior_Beach.jpg"
       },{
-        idService : 2,
+        id : 2,
         content : "hay den voi chung toi ban se co nhung trai nghiem tuyet voi",
         purpose : "vui choi ngay he",
         img : "https://furamavietnam.com/wp-content/uploads/2018/07/Vietnam_Danang_Furama_Resort_Exterior_Beach.jpg"
       },
       {
-        idService : 1,
+        id : 1,
         content : "hay den voi chung toi ban se co nhung trai nghiem tuyet voi",
         purpose : "vui choi ngay he",
         img : "https://furamavietnam.com/wp-content/uploads/2018/07/Vietnam_Danang_Furama_Resort_Exterior_Beach.jpg"
